@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.fundsdonation.R;
@@ -25,6 +26,7 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
        etEmail= (EditText)findViewById(R.id.email);
        etPwd = (EditText)findViewById(R.id.password);
        ((Button)findViewById(R.id.email_sign_in_button)).setOnClickListener(this);
+        ((TextView)findViewById(R.id.tvLogin)).setOnClickListener(this);
     }
 
 
@@ -35,7 +37,14 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
            case R.id.email_sign_in_button:
                signupUser();
                break;
+           case R.id.tvLogin:
+               navigateToLogin();
+               break;
        }
+    }
+
+    private void navigateToLogin() {
+        startActivity(new Intent(this, LoginActivity.class));
     }
 
     private void signupUser() {
