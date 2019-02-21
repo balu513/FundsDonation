@@ -1,4 +1,4 @@
-package com.example.fundsdonation;
+package com.example.fundsdonation.service;
 
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -12,8 +12,8 @@ import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.example.fundsdonation.R;
 import com.example.fundsdonation.view.MainActivity;
-import com.example.fundsdonation.view.PaymentActivity;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 

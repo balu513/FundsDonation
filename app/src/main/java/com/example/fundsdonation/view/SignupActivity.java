@@ -26,7 +26,6 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
        etEmail= (EditText)findViewById(R.id.email);
        etPwd = (EditText)findViewById(R.id.password);
        ((Button)findViewById(R.id.email_sign_in_button)).setOnClickListener(this);
-        ((TextView)findViewById(R.id.tvLogin)).setOnClickListener(this);
     }
 
 
@@ -36,9 +35,6 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
        {
            case R.id.email_sign_in_button:
                signupUser();
-               break;
-           case R.id.tvLogin:
-               navigateToLogin();
                break;
        }
     }

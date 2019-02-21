@@ -56,6 +56,7 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener{
         etPwd = (EditText)findViewById(R.id.password);
 
         ((Button)findViewById(R.id.email_sign_in_button)).setOnClickListener(this);
+        ((TextView)findViewById(R.id.tv_register)).setOnClickListener(this);
     }
 
     @Override
@@ -64,6 +65,9 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener{
          {
              case R.id.email_sign_in_button:
                  login();
+                 break;
+             case R.id.tv_register:
+                 startActivity(new Intent(this, SignupActivity.class));
                  break;
          }
     }

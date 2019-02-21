@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
+    android:background="@mipmap/bgimage"
     android:orientation="vertical"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
@@ -20,34 +21,43 @@
         android:layout_marginBottom="8dp"
         android:visibility="gone" />
 
-    <ScrollView
+  <!--  <ScrollView
         android:id="@+id/login_form"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent">-->
 
         <LinearLayout
             android:id="@+id/email_login_form"
             android:layout_width="match_parent"
+            android:layout_marginTop="150dp"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
+                android:theme="@style/TextInputLayoutAppearance"
+                android:textColorHint="#FCFBFB"
+                android:backgroundTint="#4CAF50"
                 android:layout_height="wrap_content">
 
-                <AutoCompleteTextView
+                <EditText
                     android:id="@+id/email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/prompt_email"
                     android:inputType="textEmailAddress"
+                    android:textSize="18sp"
                     android:maxLines="1"
+                    android:textColor="#ffff"
                     android:singleLine="true" />
 
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
+                android:layout_marginTop="25dp"
+                android:theme="@style/TextInputLayoutAppearance"
+                android:textColorHint="#FCFBFB"
                 android:layout_height="wrap_content">
 
                 <EditText
@@ -60,6 +70,8 @@
                     android:imeOptions="actionUnspecified"
                     android:inputType="textPassword"
                     android:maxLines="1"
+                    android:textColor="#ffff"
+                    android:textSize="18sp"
                     android:singleLine="true" />
 
             </android.support.design.widget.TextInputLayout>
@@ -69,10 +81,24 @@
                 style="?android:textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="30dp"
                 android:text="@string/action_sign_in"
+                android:textSize="20sp"
+                android:textColor="#ffff"
+                android:background="#009688"
                 android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tv_register"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="end"
+                android:clickable="true"
+                android:text="Register here"
+                android:layout_width="wrap_content"
+                android:textColor="#ffff"
+                android:textSize="17sp"
+                android:layout_height="wrap_content" />
 
         </LinearLayout>
-    </ScrollView>
+<!--    </ScrollView>-->
 </LinearLayout>
