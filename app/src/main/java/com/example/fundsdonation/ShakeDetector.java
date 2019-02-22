@@ -6,7 +6,7 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.util.FloatMath;
 import android.util.Log;
-
+/* when you shake your mobile in particular timespan how many times you shaked */
 public class ShakeDetector implements SensorEventListener {
 
 	/*
