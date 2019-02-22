@@ -10,6 +10,7 @@ import android.util.Log;
 Hello
 I am not well
  where are you
+ bad not well
 */
 public class ShakeDetector implements SensorEventListener {
 
@@ -42,6 +43,7 @@ public class ShakeDetector implements SensorEventListener {
 	public void onAccuracyChanged(Sensor sensor, int accuracy) {
 		Log.d(TAG,"onAccuracyChanged");
 		// ignore
+		//123456
 	}
 
 	@Override
