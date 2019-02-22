@@ -8,6 +8,8 @@ import android.util.FloatMath;
 import android.util.Log;
 /* when you shake your mobile in particular timespan how many times you shaked 
 Hello
+1
+23
 */
 public class ShakeDetector implements SensorEventListener {
 
@@ -33,6 +35,7 @@ public class ShakeDetector implements SensorEventListener {
 
 	public interface OnShakeListener {
 		public void onShake(int count);
+		
 	}
 
 	@Override
