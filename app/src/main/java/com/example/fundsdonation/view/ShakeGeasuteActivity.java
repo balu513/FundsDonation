@@ -8,6 +8,7 @@ import android.hardware.SensorManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
 import com.example.fundsdonation.R;
 import com.example.fundsdonation.ShakeDetector;
@@ -49,6 +50,22 @@ public class ShakeGeasuteActivity extends AppCompatActivity implements SensorEve
     private void handleShakeEvent(int count) {
         Log.d(TAG, "shake count: "+count);
 
+    }
+
+    class Onclick implements View.OnClickListener {
+
+        @Override
+        public void onClick(View v) {
+
+            switch (v.getId())
+            {
+                case R.id.adjust_height:
+                    break;
+                case R.id.adjust_width:
+                    break;
+            }
+
+        }
     }
 
     @Override
