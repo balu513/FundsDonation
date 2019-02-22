@@ -57,6 +57,7 @@ public class ShakeGeasuteActivity extends AppCompatActivity implements SensorEve
         @Override
         public void onClick(View v) {
            // Calling Surya
+            //calling 2
             switch (v.getId())
             {
                 case R.id.adjust_height:
