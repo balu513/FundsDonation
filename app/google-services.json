@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "521398210661",
+    "firebase_url": "https://fundsdonation.firebaseio.com",
+    "project_id": "fundsdonation",
+    "storage_bucket": "fundsdonation.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:521398210661:android:b75e6092acb14ad3",
+        "android_client_info": {
+          "package_name": "com.example.fundsdonation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "521398210661-bslcct6vor5751nv74jv4ar956encqhk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fundsdonation",
+            "certificate_hash": "be77d9813ba60d76cc119888526eaa41182fb286"
+          }
+        },
+        {
+          "client_id": "521398210661-an9jgu6pe45iumqfnjb09hc2uec6mbrt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqZRV_ml3BHBJ_tTedXXV69Q_WU0PtR6Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "521398210661-an9jgu6pe45iumqfnjb09hc2uec6mbrt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
