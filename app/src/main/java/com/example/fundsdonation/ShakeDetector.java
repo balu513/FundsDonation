@@ -10,8 +10,6 @@ import android.util.Log;
 Hello
 I am not well
  where are you
- Good
- Well
 */
 public class ShakeDetector implements SensorEventListener {
 
@@ -79,9 +77,6 @@ public class ShakeDetector implements SensorEventListener {
 				mShakeCount++;
 
 				mListener.onShake(mShakeCount);
-
-				//One
-                //Two
 			}
 		}
 	}
