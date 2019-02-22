@@ -8,6 +8,8 @@ import android.util.FloatMath;
 import android.util.Log;
 /* when you shake your mobile in particular timespan how many times you shaked 
 Hello
+I am not well
+ where are you
 */
 public class ShakeDetector implements SensorEventListener {
 
@@ -33,6 +35,7 @@ public class ShakeDetector implements SensorEventListener {
 
 	public interface OnShakeListener {
 		public void onShake(int count);
+		//Test
 	}
 
 	@Override
@@ -49,6 +52,7 @@ public class ShakeDetector implements SensorEventListener {
 			float x = event.values[0];
 			float y = event.values[1];
 			float z = event.values[2];
+			//test
 
 			float gX = x / SensorManager.GRAVITY_EARTH;
 			float gY = y / SensorManager.GRAVITY_EARTH;
