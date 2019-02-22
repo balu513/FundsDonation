@@ -62,6 +62,7 @@ public class ShakeGeasuteActivity extends AppCompatActivity implements SensorEve
                 case R.id.adjust_height:
                     break;
                 case R.id.adjust_width:
+                    // I am doing my code Kalyan
                     break;
             }
 
